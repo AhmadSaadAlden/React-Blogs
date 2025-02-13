@@ -1,0 +1,31 @@
+.BlogPosts{
+    margin-top: 32px;
+    height: 958px;
+
+    .cards-group{
+        height: 95.8vh;
+        padding-top: 56px;
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 32px;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .BlogPosts{
+        .cards-group{
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .BlogPosts { 
+        .cards-group { 
+            grid-template-columns: 1fr; gap: 10px; 
+        } 
+    } 
+}

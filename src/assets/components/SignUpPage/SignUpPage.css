@@ -1,0 +1,36 @@
+.signupGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        input[type="text"]{
+            position: absolute;
+            width: 430px;
+            height: 48px;
+            border: 1px solid var(--btn-primary);
+            border-radius: 8px;
+            padding: 12px 14px;
+            margin-top: 60px;
+        }
+}
+
+.signin {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    .info{
+        text-align: start;
+        margin-bottom: 59px;
+        margin-left: 75px;
+        
+    }
+    .form{
+        width: 100%;
+        margin-top: 20px;
+    }
+}

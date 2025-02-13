@@ -1,0 +1,12 @@
+.btn{
+    width: 430px;
+    height: 48px;
+    border: 1px solid var(--btn-primary);
+    border-radius: 8px;
+    margin: 8px 0;
+    background-color: var(--btn-primary);
+    color: var(--btn-color);
+    font-size: 15px;
+    font-weight: 500px;
+    cursor: pointer;
+}

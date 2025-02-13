@@ -1,0 +1,88 @@
+nav{
+    padding: 23px 70px;
+    width: 100%;
+    height: 70px;
+    border: 1px solid var(--bg-color);
+    border-bottom: 1px solid var(--border-bottom-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: var(--title-color);
+            margin-right: 20px;
+        }
+        .items{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        
+            ul{
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+
+    .sidebar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        button{
+            width: 120px;
+            height: 38px;
+            border: none;
+            outline: none;
+            border: 1px solid var(--btn-bg-color);
+            border-radius: var(--btn-border-radius);
+            background-color: var(--btn-bg-color);
+            color: var(--btn-color);
+            padding: var(--btn-padding);
+            cursor: pointer;
+        }
+        i{
+            display: none;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:992px){
+    nav{
+        padding: 40px;
+        .navBar{
+            width: 100%;
+            justify-content: space-between;
+            .items{
+                display: none;
+            }
+        }
+        .sidebar{
+            width: 100%;
+            justify-content: flex-end;
+            button{
+                display: none;
+            }
+            i{
+                display: block;
+            }
+        }
+        
+    }
+}
+
+
